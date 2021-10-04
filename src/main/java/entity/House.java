@@ -26,7 +26,7 @@ public class House {
         this.owner = owner;
     }
 
-    public String getOwner() {
+    public String getOwnerInfo() {
         return String.format("This house is owned by %s %s which is %d years old.",
                 this.owner.getName(),
                 this.owner.getSurname(),
@@ -35,7 +35,7 @@ public class House {
 
     public String getFullHouseInfo() {
         String info = String.format("%s This house is %s and has %d floor(s).",
-                this.getOwner(),
+                this.getOwnerInfo(),
                 this.getColor(),
                 this.getNumberOfFloors());
         return info;
